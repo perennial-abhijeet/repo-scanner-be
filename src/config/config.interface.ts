@@ -10,4 +10,13 @@ export interface ConfigData {
 
   /** Log level */
   logLevel: string;
+
+  /** Github token */
+  github_token: string;
+
+  /** Github username */
+  username: string;
+
+  /** Parallel process */
+  parallelProcess: number;
 }

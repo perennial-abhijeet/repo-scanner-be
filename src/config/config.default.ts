@@ -7,4 +7,7 @@ export const DEFAULT_CONFIG: ConfigData = {
   env: 'development',
   port: 3000,
   logLevel: 'http',
+  username: 'perennial-abhijeet',
+  github_token: '',
+  parallelProcess: 2,
 };

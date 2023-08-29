@@ -29,6 +29,11 @@ export class ConfigService {
       env: env.NODE_ENV || DEFAULT_CONFIG.env,
       port: env.PORT ? parseInt(env.PORT, 10) : DEFAULT_CONFIG.port,
       logLevel: env.LOG_LEVEL || DEFAULT_CONFIG.logLevel,
+      username: env.USER_NAME || DEFAULT_CONFIG.username,
+      github_token: env.GIT_TOKEN || '',
+      parallelProcess: env.PORT
+        ? parseInt(env.PORT, 10)
+        : DEFAULT_CONFIG.parallelProcess,
     };
   }
 
