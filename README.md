@@ -43,9 +43,9 @@ PARALLEL_PROCESS= (At once how many parallel processing should be allowed)
 
 ## Parallel Processing Description
 
-- In Get Repo Details API we have restricted the execution on function level.
-- Based on PARALLEL_PROCESS values set in environment, we allow parallel execution.
-- Let's say we received 4 request at same time and value for PARALLEL_PROCESS is 2, with global execution counter we maintain current execution count and only 2 parallel execution will happened.
-- For other two request has to wait until previous execution gets complete.
-- Once execution start we have incremented counter and after execution completed we have decremented counter.
-- With this way we have implemented parallel processing.
+- Within the Get Repo Details API, our focus lies in refining execution controls at the function level.
+- By considering the values encapsulated within PARALLEL_PROCESS within the environment, we can gracefully introduce the concept of concurrent processing.
+- Imagine a scenario where 4 requests converge simultaneously while the PARALLEL_PROCESS parameter is set at 2; here, we administer a universal tally to monitor the ongoing execution count, exclusively permitting 2 parallel operations.
+- Consequently, the remaining 2 requests gracefully bide their time, poised for action until the antecedent executions conclude their course.
+- As each execution commences, our numeric gauge ascends, only to be decremented upon their culmination.
+- Through this meticulous methodology, we effectively materialize the prospect of parallel processing.
