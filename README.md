@@ -33,12 +33,12 @@ PARALLEL_PROCESS=
 
 ```bash
 
-NODE_ENV= (Set Node environment)
-PORT= (Set Port on which application need to be run)
+NODE_ENV= (Node environment)
+PORT= (Port on which application will run)
 LOG_LEVEL= (Log level for application)
 USER_NAME= (Github username)
 GIT_TOKEN= (Github access token)
-PARALLEL_PROCESS= (At once how many parallel processing should be allowed)
+PARALLEL_PROCESS= (The number of parallel processes allowed)
 ```
 
 ## Parallel Processing Description
