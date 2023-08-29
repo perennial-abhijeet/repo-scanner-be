@@ -1,6 +1,6 @@
 import { BadRequestException, Injectable } from '@nestjs/common';
 import { ConfigService } from '../config/config.service';
-import HttpService_ from '../services/http.service';
+import HttpService_ from '../utils/http.service';
 import { githubUrls } from './constants';
 
 @Injectable()
